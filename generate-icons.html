@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><title>Generate PWA Icons</title></head>
+<body>
+<h2>Right-click each image → "Save image as" → save to public/icons/</h2>
+<div style="display:flex;gap:40px;padding:20px">
+  <div>
+    <h3>icon-192.png</h3>
+    <canvas id="c192" width="192" height="192"></canvas>
+  </div>
+  <div>
+    <h3>icon-512.png</h3>
+    <canvas id="c512" width="512" height="512"></canvas>
+  </div>
+</div>
+<script>
+function drawIcon(canvas) {
+  const ctx = canvas.getContext('2d');
+  const s = canvas.width;
+  // Background
+  ctx.fillStyle = '#2563eb';
+  ctx.beginPath();
+  ctx.roundRect(0, 0, s, s, s * 0.18);
+  ctx.fill();
+  // Plane
+  ctx.save();
+  ctx.translate(s/2, s/2);
+  ctx.scale(s/512, s/512);
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath();
+  ctx.moveTo(0, -140);
+  ctx.lineTo(50, -40);
+  ctx.lineTo(180, 20);
+  ctx.lineTo(50, 30);
+  ctx.lineTo(30, 120);
+  ctx.lineTo(0, 90);
+  ctx.lineTo(-30, 120);
+  ctx.lineTo(-50, 30);
+  ctx.lineTo(-180, 20);
+  ctx.lineTo(-50, -40);
+  ctx.closePath();
+  ctx.fill();
+  ctx.restore();
+}
+drawIcon(document.getElementById('c192'));
+drawIcon(document.getElementById('c512'));
+</script>
+</body>
+</html>
