@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import { useFlightStore } from '@/store/useFlightStore';
@@ -24,7 +25,9 @@ export default function SearchResultsClient({
   const router = useRouter();
   const { setSelectedFlight, setSearchQuery } = useFlightStore();
 
-  setSearchQuery({ origin, destination, date, passengers, class: seatClass });
+  useEffect(() => {
+    setSearchQuery({ origin, destination, date, passengers, class: seatClass });
+  }, [origin, destination, date, passengers, seatClass, setSearchQuery]);
 
   const handleSelectFlight = (flight: Flight) => {
     setSelectedFlight(flight);
