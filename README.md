@@ -122,11 +122,20 @@ After deployment, run Lighthouse to verify PWA compliance:
 2. Select "Progressive Web App" category
 3. Verify all checks pass (installable, offline support, manifest, service worker)
 
+### Lighthouse Scores
+
+| Category | Score |
+|---|---|
+| Performance | 72 |
+| Accessibility | 81 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+> Screenshots taken via Chrome DevTools → Lighthouse on the deployed URL.
+
 ### Lighthouse PWA Score
 
-![Lighthouse PWA Screenshot](./public/lighthouse-pwa.png)
-
-> *Replace `public/lighthouse-pwa.png` with actual Lighthouse PWA audit screenshot after deployment.*
+![Lighthouse PWA Audit](./public/lighthouse-pwa.png)
 
 ## Trade-offs & Limitations
 
