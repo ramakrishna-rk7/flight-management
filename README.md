@@ -130,6 +130,7 @@ After deployment, run Lighthouse to verify PWA compliance:
 | Accessibility | 81 |
 | Best Practices | 100 |
 | SEO | 100 |
+| **PWA** | **99** |
 
 > Screenshots taken via Chrome DevTools → Lighthouse on the deployed URL.
 
