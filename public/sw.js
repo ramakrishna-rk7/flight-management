@@ -1,1 +1,92 @@
-if(!self.define){let e,a={};const s=(s,i)=>(s=new URL(s+".js",i).href,a[s]||new Promise(a=>{if("document"in self){const e=document.createElement("script");e.src=s,e.onload=a,document.head.appendChild(e)}else e=s,importScripts(s),a()}).then(()=>{let e=a[s];if(!e)throw new Error(`Module ${s} didn’t register its module`);return e}));self.define=(i,n)=>{const t=e||("document"in self?document.currentScript.src:"")||location.href;if(a[t])return;let c={};const r=e=>s(e,t),f={module:{uri:t},exports:c,require:r};a[t]=Promise.all(i.map(e=>f[e]||r(e))).then(e=>(n(...e),c))}}define(["./workbox-58cdce56"],function(e){"use strict";importScripts("fallback-UGaa1HJgZQFFSYkf_dU2M.js"),self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"/_next/app-build-manifest.json",revision:"7f24389f25752127fb9f25a7ce783c5b"},{url:"/_next/static/UGaa1HJgZQFFSYkf_dU2M/_buildManifest.js",revision:"c155cce658e53418dec34664328b51ac"},{url:"/_next/static/UGaa1HJgZQFFSYkf_dU2M/_ssgManifest.js",revision:"b6652df95db52feb4daf4eca35380933"},{url:"/_next/static/chunks/117-65dc613f33b2bc17.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/12-cb3b48511bdc81cc.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/44530001-74f6101d35428d38.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/707-306c50fad7f66755.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/789-a10b762190d4b8f6.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/_not-found/page-f198fd7f5464b317.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/auth/login/page-dc3e33e62e7c7f36.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/auth/register/page-40e1a2a41f07cf76.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/booking/%5BflightId%5D/confirm/page-5e232794d0728852.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/booking/%5BflightId%5D/page-1a868ed651fe630a.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/layout-29796781b2a70895.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/my-bookings/page-c255142a4f91f5a5.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/offline/page-54c7595395ec77bb.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/page-86891166065593ef.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/app/search/page-0458a0dad13e7cb5.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/fd9d1056-c02727ce548d42ae.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/framework-f66176bb897dc684.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/main-5a1b67e1ae0de986.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/main-app-00e66278f8fce6de.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/pages/_app-72b849fbd24ac258.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/pages/_error-7ba65e1336b92748.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/chunks/polyfills-42372ed130431b0a.js",revision:"846118c33b2c0e922d7b3a7676f81f6f"},{url:"/_next/static/chunks/webpack-074987c53fb04d31.js",revision:"UGaa1HJgZQFFSYkf_dU2M"},{url:"/_next/static/css/3e823743a6e84597.css",revision:"3e823743a6e84597"},{url:"/_next/static/media/19cfc7226ec3afaa-s.woff2",revision:"9dda5cfc9a46f256d0e131bb535e46f8"},{url:"/_next/static/media/21350d82a1f187e9-s.woff2",revision:"4e2553027f1d60eff32898367dd4d541"},{url:"/_next/static/media/8e9860b6e62d6359-s.woff2",revision:"01ba6c2a184b8cba08b0d57167664d75"},{url:"/_next/static/media/ba9851c3c22cd980-s.woff2",revision:"9e494903d6b0ffec1a1e14d34427d44d"},{url:"/_next/static/media/c5fe6dc8356a8c31-s.woff2",revision:"027a89e9ab733a145db70f09b8a18b42"},{url:"/_next/static/media/df0a9ae256c0569c-s.woff2",revision:"d54db44de5ccb18886ece2fda72bdfe0"},{url:"/_next/static/media/e4af272ccee01ff0-s.p.woff2",revision:"65850a373e258f1c897a2b3d75eb74de"},{url:"/icons/icon-192.png",revision:"178164f81917b8e87073295a635588de"},{url:"/icons/icon-512.png",revision:"178164f81917b8e87073295a635588de"},{url:"/manifest.json",revision:"07d08cdb683218a1c35efd4d24ea9e5c"},{url:"/offline",revision:"UGaa1HJgZQFFSYkf_dU2M"}],{ignoreURLParametersMatching:[]}),e.cleanupOutdatedCaches(),e.registerRoute("/",new e.NetworkFirst({cacheName:"start-url",plugins:[{cacheWillUpdate:async({request:e,response:a,event:s,state:i})=>a&&"opaqueredirect"===a.type?new Response(a.body,{status:200,statusText:"OK",headers:a.headers}):a},{handlerDidError:async({request:e})=>self.fallback(e)}]}),"GET"),e.registerRoute(({url:e})=>Boolean(supabaseUrl)&&e.origin===supabaseUrl&&e.pathname.startsWith("/rest/v1/flights"),new e.StaleWhileRevalidate({cacheName:"flight-search-api",plugins:[new e.ExpirationPlugin({maxEntries:50,maxAgeSeconds:3600}),{handlerDidError:async({request:e})=>self.fallback(e)}]}),"GET"),e.registerRoute(({url:e})=>e.pathname.startsWith("/search"),new e.StaleWhileRevalidate({cacheName:"flight-search",plugins:[new e.ExpirationPlugin({maxEntries:50,maxAgeSeconds:3600}),{handlerDidError:async({request:e})=>self.fallback(e)}]}),"GET"),e.registerRoute(({request:e})=>"image"===e.destination,new e.CacheFirst({cacheName:"images",plugins:[new e.ExpirationPlugin({maxEntries:200,maxAgeSeconds:2592e3}),{handlerDidError:async({request:e})=>self.fallback(e)}]}),"GET"),e.registerRoute(({request:e})=>"script"===e.destination||"style"===e.destination||"font"===e.destination,new e.CacheFirst({cacheName:"static-assets",plugins:[new e.ExpirationPlugin({maxEntries:200,maxAgeSeconds:2592e3}),{handlerDidError:async({request:e})=>self.fallback(e)}]}),"GET")});
+// Simple manual service worker for PWA support
+// Works with Next.js 14 + Vercel without build-time issues
+
+const CACHE_NAME = 'skybook-v1';
+const OFFLINE_URL = '/offline';
+
+const PRECACHE_URLS = [
+  '/',
+  '/offline',
+  '/manifest.json',
+];
+
+// Install event - precache static assets
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(PRECACHE_URLS);
+    })
+  );
+  self.skipWaiting();
+});
+
+// Activate event - clean up old caches
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames
+          .filter((name) => name !== CACHE_NAME)
+          .map((name) => caches.delete(name))
+      );
+    })
+  );
+  self.clients.claim();
+});
+
+// Fetch event - network first, fallback to cache
+self.addEventListener('fetch', (event) => {
+  const { request } = event;
+  const url = new URL(request.url);
+
+  // Skip non-GET requests
+  if (request.method !== 'GET') return;
+
+  // Skip Supabase API calls (they need real network)
+  if (url.origin.includes('supabase') || url.pathname.startsWith('/rest/')) {
+    event.respondWith(
+      fetch(request).catch(() => new Response('Offline', { status: 503 }))
+    );
+    return;
+  }
+
+  // For navigation requests, try network first then offline
+  if (request.mode === 'navigate') {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          // Cache successful navigation responses
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+          }
+          return response;
+        })
+        .catch(() => {
+          // Return cached page if available, otherwise offline page
+          return caches.match(request).then((cached) => {
+            if (cached) return cached;
+            return caches.match(OFFLINE_URL).then((offline) => {
+              return offline || new Response('Offline', { status: 503 });
+            });
+          });
+        })
+    );
+    return;
+  }
+
+  // For other requests, stale-while-revalidate
+  event.respondWith(
+    caches.match(request).then((cached) => {
+      const fetchPromise = fetch(request).then((response) => {
+        if (response.ok) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+        }
+        return response;
+      }).catch(() => cached);
+
+      return cached || fetchPromise;
+    })
+  );
+});
